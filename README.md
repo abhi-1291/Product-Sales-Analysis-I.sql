@@ -1,2 +1,7 @@
-# Product-Sales-Analysis-I.sql
-Write a solution to report the product_name, year, and price for each sale_id in the Sales table. Return the resulting table in any order.
+SELECT product_name, year, price
+<br>
+FROM Sales
+<br>
+LEFT JOIN Product
+<br>
+ON Sales.product_id = Product.product_id;
